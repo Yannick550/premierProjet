@@ -1,0 +1,22 @@
+td, th {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+
+}
+
+/* 
+commantaire en CSS c'est ctrl + K+ C 
+*/
+
+table {
+    border-collapse: collapse;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+
+.lol{
+    text-align: center;
+}
