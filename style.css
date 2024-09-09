@@ -17,6 +17,27 @@ body{
     color: aliceblue;
 }
 
-.lol{
-    text-align: center;
+/* CSS du formulaire */
+
+label, input {
+    display: block;
 }
+
+label {
+    margin-top: 15px;
+}
+
+/* Voici un exemple de selecteur */
+
+input[type="checkbox"], input[type="checkbox"] + label,
+ input[type="radio"], input[type="radio"] + label {
+    display: inline;
+    margin-top: 15px;
+}
+
+
+/* On cible les labels et les  inputs dans les li */
+li input, li label{
+    display: inline;
+}
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form>
+
+        <!-- Les inputs -->
+        <!-- Les inputs text permettent d'écrire du texte cours -->
+        <!-- Pour l'accéssibiliter, la propriéter FOR du label doit être TOUJOURS lié avec son input dans la propriété NAME -->
+
+    <fieldset>
+        <legend>Mes trois premiers inputs</legend>
+        
+        <label for="premier">Mon premier input</label>
+        <input type="text" name="premier" placeholder="Ecrivez du texte">
+
+        <!-- La propierté step, permet l'incrémentation comme ci-dessous de 5 en 5 -->
+
+        <label for="number">Mon input number</label>
+        <input type="number" name="number" min="5" max="100" step="5">
+
+        <label for="secret">Mon input secret</label>
+        <input type="password" name="secret" minlength="6" placeholder="Ecrivez votre mot de passe">
+
+    </fieldset>
+
+        <label for="date">Ma date</label>
+        <input type="date" name="date">
+
+        <label for="range">Mon input range</label>
+        <input type="range" name="range">
+
+        <!-- Les couleurs retournées avec cette input sont en héxadécimales -->
+
+        <label for="color">Mon input color</label>
+        <input type="color" name="color">
+
+        <input type="checkbox" name="check">
+        <label for="check">3 roues</label>
+
+        <!-- Permet un seul choix mais le name doit être le même -->
+
+    <div>
+        <input type="radio" name="radio" value="homme">
+        <label for="radio">Homme</label>
+        <input type="radio" name="radio" value="femme">
+        <label for="radio">Femme</label>
+    </div>
+
+        <textarea name="mylife" id="" cols="30" rows="20" placeholder="Raconte ta vie fabuleuse"></textarea>
+        <label for="mylife">Raconte ta life</label>
+
+        <label for="select">Ma selection de bagnoles</label>
+        <select name="select">
+            <option value="dacia">Dacia</option>
+            <option value="lada">Lada</option>
+            <option value="merco">Merco</option>
+            <option value="multipla">Multiplia</option>
+        </select>
+
+
+
+
+    <!-- Permet la validation du formulaire -->
+
+    <input type="submit" value="Valider">
+
+</form>
+
+
+<!-- Exercice -->
+
+
+<form>
+    <fieldset>
+            <legend>Votre identiter</legend>
+        <ol>
+    
+            <li> 
+                <label for="name"> Votre Nom</label>
+                <input type="text" name="name" placeholder="Prénom et Nom">
+            </li>
+            
+            <li>
+                <label for="mail"> Votre Email</label>
+                <input type="text" name="mail" placeholder="ex:trucmuche@derien.con">
+            </li>
+            
+            <li>
+                <label for="phone"> Votre Téléphone</label>
+                <input type="text" name="phone" placeholder="par ex 0123456789">
+            </li>
+        </ol>
+            
+    </fieldset>
+    
+    <fieldset>
+            <legend>Adresse de livraison</legend>
+
+        <ol>
+
+            <li>
+                <label for="adresse">Adresse</label>
+                <textarea name="adresse" cols="15" rows="5"></textarea>
+            </li>
+
+            <li>
+                <label for="postal"> Code postal</label>
+                <input type="text" name="postal">
+            </li>
+            
+            <li>
+                <label for="pays">Votre Pays</label>
+                <input type="text" name="pays">
+            </li>
+
+        </ol>
+            
+    </fieldset>
+    
+    <fieldset>
+            <legend>Information CB</legend>
+    
+    <fieldset>
+    <ol>
+            <li>
+            <legend>Type de carte</legend>
+            </li>
+
+        <ol>
+
+            <li>
+                <label for="radio"> Visa</label>
+                <input type="radio" name="card">
+            </li>
+                
+            <li>
+                <label for="radio"> Mastercard</label>
+                <input type="radio" name="card">
+            </li>
+                
+            <li>
+                <label for="radio"> AmEx</label>
+                <input type="radio" name="card">
+            </li>
+
+        </ol>
+        
+        
+
+                
+    
+    </fieldset>
+
+    </fieldset>
+    
+        <li>
+            <label for="numero">N de carte</label>
+            <input type="text" name="numero" >
+        </li>
+
+        <li>
+            <label for="code"> Code de securiter</label>
+            <input type="password" name="code">
+        </li>
+
+        </li>
+            <label for="porteur"> Non du porteur</label>
+            <input type="text" name="porteur" placeholder="Meme nom que sur la carte">
+        </li>
+
+    </ol>
+    
+    
+    
+    <fieldset>
+    
+        <input type="submit" value="J'achete!!!">
+    
+    </fieldset>
+    
+    </form>
+        
+    
+</body>
+</html>
