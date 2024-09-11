@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+
+    <h1 id="personne">Jean-Michel</h1>
+
+    <input id="texte" type="text">
+
+    <button id="btn">Coucou !</button>
+
+    <button id="btn2">Changer de Titre</button>
+    <input type="color"  id="color">
+
+    <div>
+        <input type="range" id="range" value="0" min="0" max="1" step="0.1">
+    </div>
+
+    <img id="img" src="autruche.jpg" alt=" Une autruche secrétaire">
+
+
+
+    <script>
+        // Pour récuperer un élément par sont id
+        const personne = document.getElementById("personne");
+        const texte = document.getElementById("texte");
+        const btn = document.getElementById("btn");
+        const btn2 = document.getElementById("btn2");
+        const color = document.getElementById("color");
+        const img = document.getElementById("img");
+        const range = document.getElementById("range");
+        
+
+        console.log(personne.innerHTML)
+        // ici on change l'interieur du texte séléctionnée
+        personne.innerHTML = "Jeannine"
+
+        let nom = ["Jean-Michel", "Momo", "Carlos", "André"]
+
+        let rand = Math.floor(Math.random() *nom.length)
+        personne.innerHTML = nom[rand]
+
+        // Nous avons un tableau de taille 4
+        // Cependant le tableau comence toujours par un index 0 ce qui veut dire que le tableau va de l'index 0 à 3
+        // Math.floor(Math.random() *nom.length) // pour Math.random = 0.74
+        // Math.floor(0.74 * 4)
+        // Math.floor(2.96)
+        // 2 donc il séléctionnera Carlos
+
+        // Ici on mondie l'interieur de l'input
+        texte.value = "";
+        console.log(texte)
+
+        // On ajoute un évenement de type input dans votre input
+        // Ce qui veut dire que a chaque fois que vous ecrivez une lettre dedans le code à la suite de l'événement.
+        
+        texte.addEventListener("input", function(){
+            console.log(texte.value);
+        })
+
+        let compteur = 0;
+
+        btn.addEventListener("click", function(){
+            //Augmente de 1 à chaque click sur le bouton
+            compteur++ 
+            
+
+        if ( compteur < 50 ){
+            console.log (compteur)
+            
+        }
+        else 
+            console.log("Il y en à de trop calme ta joie !!!!!!!")
+            // Exercice quand le compteur est a 50 le compteur n'augmente plus et envoie un message dans le console.log
+            //'Il y en a de trop!!!'
+        })
+
+        btn2.addEventListener("click", function(){
+            let rand = Math.floor(Math.random() *nom.length)
+        personne.innerHTML = nom[rand]
+        })
+
+        color.addEventListener("input", function(){
+            console.log(color.value);
+            personne.style.color = color.value
+        })
+
+        range.value = 0;
+        //il faut sauvegarder la aille de l'image dans une variable
+        let w = img.width
+        range.addEventListener("input", function(){
+           img.width = w * range.value;
+           
+        })
+
+    </script>
+    
+</body>
+</html>

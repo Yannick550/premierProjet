@@ -6,6 +6,9 @@
     <title>Javascript</title>
 </head>
 <body>
+
+    
+
     
     <script>
         //Commentaire en Javascript 
@@ -115,6 +118,127 @@
             }else{
                 console.log("Je suis pas Biienng!!!!")
             }
+
+
+            // JS avec de Maths
+
+            // addition
+
+            let addition = 1 + 1; // 2
+            let soustraction = 4 - 3; // 1
+            let multiplication = 4 * 3; // 12
+            let division = 8 / 2; // 4
+            let modulo = 9 % 4; // 1
+
+            // puissance 
+
+            let puissance = 2**4; // 16
+            let power = Math.pow (2, 4); // 16
+            let rand = Math.random(); // génère aléatoirement un chiffre entre 0 et un chiffre <1
+
+            //génère un chiffre en 0 et 99.999 puis l'arrondie pour arrivé à 99
+            let cent = Math.floor(Math.random() * 100)
+            // Math.floor(0,448 * 100)
+            // Math.floor(44,8)
+            // Math.floor arrondie à l'unité en dessous
+            // 44
+
+
+            // Les boucles 
+
+                // exemple de boucle simple de type for
+            
+                for(i = 0; i < 5001; i++) {
+                    console.log(i * 2)
+                }
+
+                // Mais que ce passe t-il ?
+                /*
+                    La boucle commence avec un compteur "i" qui commence par 0.
+                    La boucle s'arrétera quand "i" aura atteint 5000.
+                    Avec "i++" la boucle à chaque tour de boucle augmentera de 1
+                    Dans le console.log "i" est multiplier par 2, 5000 fois
+                */
+
+                for (index = 0; index < panier.length; index++) {
+                    console.log(panier[index])
+                }
+                let bagnole = ["Mazda", "Lada", "Audi", "Chrysler", 'Volkswagen']
+                for (fruit of bagnole) {
+                    console.log(fruit)
+                }
+
+                // Les fonctions
+
+                function multiplisParDeux(nbr) {
+                    console.log(nbr * 2)
+                }
+
+                multiplisParDeux(70)
+                multiplisParDeux(98)
+                multiplisParDeux(41.96)
+
+                // La concaténation
+
+                let p = "coucou" + " c'est nous.";
+                console.log(p)
+
+                let k = "j'ai " + 5 + " chien"
+                console.log(k)
+
+                // A NE PAS FAIRE !!!!!!!!!!!!! 
+                let u = "10" + 4; // 104 cause des erreurs dans votre code
+                console.log(u)
+
+                let v = 45
+                console.log("J'ai " + v + " enfants")
+
+                // Les littéraux 
+
+                console.log(`J'ai ${v} enfants`);
+
+            // if écriture ternaire
+            
+            let bb = 23
+
+            // On verifie que bb est superieur à 18 
+            //Si c'est vrai, il fera les instructions aprés le ?
+            //Sinon il fera les instruction aprés le :
+            
+            bb > 18 ? console.log("Tu es majeur !") : console.log ("On verra ça quand tu sera plus grand")
+
+
+            // L'opérateur de coalescence des null
+
+            //L'opérateur de coalescence des null, permet de données une valeurs parmis plusieurs valeurs dans un certaine ordre et 
+            // prendra la première valeur non-null ou la première valeur définie
+
+            let lo = null
+            let la = null
+            let le = 54
+
+            let lu = lo ?? la ?? le
+            // lu = 54
+
+            // Inverse les valeurs de chaque variables
+            // vav = 41 et vov = 6
+
+            let vav = 6
+            let vov = 41
+            let viv =
+                
+            // viv = 6, vav = 6
+            viv = vav
+            // vav = 41, vov = 41
+            vav = vov 
+            // vov = 6 , viv =6
+            vov = viv
+                
+            console.log( vov,vav)
+            
+            
+            
+
 
 
             
