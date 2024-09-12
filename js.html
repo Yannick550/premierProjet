@@ -45,7 +45,7 @@
         personne.innerHTML = nom[rand]
 
         // Nous avons un tableau de taille 4
-        // Cependant le tableau comence toujours par un index 0 ce qui veut dire que le tableau va de l'index 0 à 3
+        // Cependant le tableau commence toujours par un index 0 ce qui veut dire que le tableau va de l'index 0 à 3
         // Math.floor(Math.random() *nom.length) // pour Math.random = 0.74
         // Math.floor(0.74 * 4)
         // Math.floor(2.96)
@@ -90,12 +90,15 @@
         })
 
         range.value = 0;
-        //il faut sauvegarder la aille de l'image dans une variable
+        //il faut sauvegarder la taille de l'image dans une variable
         let w = img.width
         range.addEventListener("input", function(){
            img.width = w * range.value;
            
         })
+
+
+        
 
     </script>
     

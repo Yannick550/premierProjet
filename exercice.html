@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice_js</title>
+</head>
+<body>
+
+
+    <input id="nbr" type="number">
+    <button id="btn">Multiplier</button>
+
+    <button id="btn2">Pile ou Face</button>
+
+
+    <script>
+
+        // quand je clique sur le bouton
+        const btn = document.getElementById("btn")
+        const nbr = document.getElementById("nbr")
+
+        btn.addEventListener("click", function() {
+        // ça lance le calcul (multiplication) du chiffre de l'input  de 0 à 10
+            for(i = 0; i<=10; i++) {
+                console.log(`${nbr.value} fois ${i} est égale à ${nbr.value * i}`)
+            }
+        })
+
+        
+        /* 
+            //Les simboles de vérifications
+            
+            // on verifie l'égalité sans la vérifications de type de a à b
+            // a == b
+
+            on verifie que a est supérieur à b
+            a > b
+
+            on verifie que a est supérieur ou égal à b
+            a >= b
+
+            on verifie que a est inférieur à b
+            a < b
+
+             on verifie que a est inférieur ou égal à b
+            a <= b
+
+            on vérifie que a n'est pas égale à b
+            a != b
+
+            on vérifie que a est strictement égale à b
+            lors de cette vérification, on vérifie le type
+            a === b
+        
+        
+        */
+        
+
+    
+        // pile ou face
+        // On ajoute un bouton et ça affiche aléatoirement pile ou face.
+        // dans un console.log
+
+        
+        const btn2 = document.getElementById("btn2")
+
+        btn2.addEventListener("click", function(){
+        //let pileOuFace = Math.random() > 0.5 ? "pile" : "face" 
+        //   :    signifie  "ou bien"
+        console.log(pileOuFace)
+        })
+
+        
+        if(Math.random() > 0.5) {
+            console.log("pile")
+        }else {
+            console.log("face")
+        }
+        
+
+       
+
+
+
+
+
+
+        
+
+
+
+    
+
+        
+    </script>
+    
+</body>
+</html>
